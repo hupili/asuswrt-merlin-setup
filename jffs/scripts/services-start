@@ -6,4 +6,5 @@
 
 /jffs/scripts/iptables-setup.sh
 
-cru a serv '18,48 * * * * /jffs/scripts/cron.sh'
+# cru a serv '8,18,28,38,48,58 * * * * /jffs/scripts/cron.sh'
+cru a serv '* * * * * /jffs/scripts/cron.sh'
