@@ -1,0 +1,9 @@
+#!/bin/sh
+# The AsusWRT-Merlin services start.
+# This script will be executed upon bootup.
+
+/jffs/scripts/entware-start.sh
+
+/jffs/scripts/iptables-setup.sh
+
+cru a serv '18,48 * * * * /jffs/scripts/cron.sh'

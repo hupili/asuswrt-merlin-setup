@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/jffs/scripts/entware-stop.sh
