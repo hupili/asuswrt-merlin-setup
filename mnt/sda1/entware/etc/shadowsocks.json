@@ -1,0 +1,9 @@
+{
+    "server": "INPUT-Your-VPS-Server-IP",
+    "server_port": "INPUT-Your-VPS-Server-Port",
+    "local_address": "0.0.0.0",
+    "local_port": 1080,
+    "password": "INPUT-Your-SS-Password",
+    "timeout": 60,
+    "method": "INPUT-Your-SS-Encryption-Method"
+}
