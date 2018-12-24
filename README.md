@@ -2,6 +2,8 @@
 
 Notes, configs and commands for setting up an asuswrt-merlin router for entire family to access Internet scientifically
 
+**Last Update:** 20181224
+
 ## Tested Model
 
 - Asus RT-AC-1900P
@@ -11,6 +13,7 @@ Notes, configs and commands for setting up an asuswrt-merlin router for entire f
 ### Prerequisite
 
 - An USB (for entware) -- entware asks for a partiition before setup.
+- A working SS Server. (traffic will be routed via this node)
 
 ### Major steps and explanation
 
@@ -34,6 +37,7 @@ Note: You may need to restart router upon key steps above.
 
 ### Topology
 
+```
 raw TCP
 -- (iptables) -->
 REDSOCK
@@ -44,6 +48,7 @@ ShadowSocks (server)
 -- (unwrap SOCKS5 layer) -->
 raw TCP
 --> destination
+```
 
 ### Features
 
